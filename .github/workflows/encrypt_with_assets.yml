@@ -41,7 +41,7 @@ jobs:
         run: >
           staticrypt index.html -p ${{ secrets.DECRYPTION_PASSPHRASE }} --short
           --template "password_template.html"
-          --template-title "Sitio protegido con contraseña"
+          --template-title "Consigue acceso antes del lanzamiento"
           --template-instructions "Ingresa la contraseña, si no te sabes la clave ve al ig de @theunofficialironman"
           --template-button "Abrir Pagina"
           --template-color-primary "#1d72a2"
