@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <script async src="https://tally.so/widgets/embed.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The unofficial Ironman</title>
@@ -21,10 +22,12 @@
         align-items: center;
         text-align: center;
         padding: 20px;
+        position: relative;
       }
 
       .container {
         max-width: 600px;
+        width: 100%;
       }
 
       h1 {
@@ -53,6 +56,26 @@
         100% { transform: rotate(360deg); }
       }
 
+      .tally-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 15px 25px;
+        font-size: 3rem;
+        color: #fff;
+        background-color: #1d72a2;
+        border: none;
+        border-radius: 50%;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 1000;
+      }
+
+      .tally-btn:hover {
+        background-color: #16659b;
+      }
+
+
       footer {
         position: absolute;
         bottom: 20px;
@@ -64,6 +87,7 @@
     </style>
   </head>
   <body>
+    
     <div class="container">
       <h1>🚧 En construcción</h1>
       <p>Estamos trabajando para traerte algo épico. ¡Vuelve pronto!</p>
@@ -72,15 +96,15 @@
     <footer>
       &copy; 2025 The unofficial Ironman. Todos los derechos reservados.
     </footer>
-  </body>
-</html>
 
+    <button 
+    class="tally-btn" 
+    data-tally-open="3jvYW9" 
+    data-tally-emoji-text="👋" 
+    data-tally-emoji-animation="wave"
+  >
+  🤫
+  </button>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery-slim.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
